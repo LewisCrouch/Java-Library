@@ -7,6 +7,11 @@ import java.util.HashMap;
 
 import javax.imageio.ImageIO;
 
+/**
+ * Registers and stores images.
+ * @author Lewis
+ *
+ */
 public class ImageRegister
 {
 	private static final ImageRegister instance = new ImageRegister();
@@ -20,6 +25,11 @@ public class ImageRegister
 		ImageRegister.currentIndex = 0;
 	}
 
+	/**
+	 * Get an image by index/id.
+	 * @param i
+	 * @return
+	 */
 	public static BufferedImage getImage(int i)
 	{
 		if(ImageRegister.images.containsKey(i))
@@ -29,6 +39,11 @@ public class ImageRegister
 		return null;
 	}
 
+	/**
+	 * Register an image within the relative "resources" directory.
+	 * @param path
+	 * @return
+	 */
 	public static int registerImage(String path)
 	{
 		try
@@ -44,12 +59,22 @@ public class ImageRegister
 		}
 	}
 
+	/**
+	 * Register an image from an instance of BufferedImage.
+	 * @param img
+	 * @return
+	 */
 	public static int registerImage(BufferedImage img)
 	{
 		ImageRegister.images.put(ImageRegister.currentIndex, img);
 		return ImageRegister.currentIndex++;
 	}
 
+	/**
+	 * Remove an image by index/id.
+	 * @param i
+	 * @return
+	 */
 	public static boolean removeImage(int i)
 	{
 		if(ImageRegister.images.containsKey(i))

@@ -2,6 +2,12 @@ package lewiscrouch.lib.util;
 
 public class TimeConverter
 {
+	/**
+	 * Formats seconds into hours, minutes and seconds.
+	 * E.g. 1000 seconds would return 00:16:40
+	 * @param totalSeconds
+	 * @return
+	 */
 	public static String format(int totalSeconds)
 	{
 		int hours = totalSeconds / 3600;

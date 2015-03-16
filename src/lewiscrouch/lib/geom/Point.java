@@ -1,5 +1,10 @@
 package lewiscrouch.lib.geom;
 
+/**
+ * Used to store coordinates and perform calculations on them.
+ * @author Lewis
+ *
+ */
 public class Point
 {
 	private int x;

@@ -1,5 +1,11 @@
 package lewiscrouch.lib.geom;
 
+/**
+ * Essentailly stores a Point and a Size.
+ * Also contains functions for calculating differences.
+ * @author Lewis
+ *
+ */
 public class Rectangle
 {
 	private Point point;

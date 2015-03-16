@@ -1,5 +1,10 @@
 package lewiscrouch.lib.geom;
 
+/**
+ * Contains a width and height, with functions for calculating differences.
+ * @author Lewis
+ *
+ */
 public class Size
 {
 	private int width;
