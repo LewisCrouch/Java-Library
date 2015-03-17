@@ -33,6 +33,26 @@ public class Point
 		return ((this.x == that.x && this.y == that.y));
 	}
 
+	public void incrementX(int increment)
+	{
+		this.x += increment;
+	}
+
+	public void decrementX(int decrement)
+	{
+		this.x -= decrement;
+	}
+
+	public void incrementY(int increment)
+	{
+		this.y += increment;
+	}
+
+	public void decrementY(int decrement)
+	{
+		this.y -= decrement;
+	}
+
 	public int getX()
 	{
 		return this.x;

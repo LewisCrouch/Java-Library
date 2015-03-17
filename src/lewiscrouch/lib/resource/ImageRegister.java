@@ -1,7 +1,6 @@
 package lewiscrouch.lib.resource;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -48,7 +47,7 @@ public class ImageRegister
 	{
 		try
 		{
-			BufferedImage img = ImageIO.read(new File("resources/" + path));
+			BufferedImage img = ImageIO.read(ResourceManager.getResourceFile(path));
 			ImageRegister.images.put(ImageRegister.currentIndex, img);
 			return ImageRegister.currentIndex++;
 		}

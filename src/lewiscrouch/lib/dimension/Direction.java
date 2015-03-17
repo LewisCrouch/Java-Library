@@ -7,6 +7,7 @@ package lewiscrouch.lib.dimension;
  */
 public enum Direction
 {
+	NONE(-1, "None"),
 	NORTH(0, "North"),
 	NORTH_EAST(1, "North East"),
 	EAST(2, "East"),
